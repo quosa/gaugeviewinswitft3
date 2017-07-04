@@ -12,9 +12,11 @@
 		5B29925F1F0BD2F400C27963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B29925D1F0BD2F400C27963 /* Main.storyboard */; };
 		5B2992611F0BD2F400C27963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B2992601F0BD2F400C27963 /* Assets.xcassets */; };
 		5B2992641F0BD2F400C27963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2992621F0BD2F400C27963 /* LaunchScreen.storyboard */; };
+		947AEA70AEB607A9F5D4C08D /* Pods_gaugetest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B922E994EB97FD806578B6 /* Pods_gaugetest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05B922E994EB97FD806578B6 /* Pods_gaugetest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gaugetest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2992561F0BD2F400C27963 /* gaugetest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gaugetest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2992591F0BD2F400C27963 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B29925B1F0BD2F400C27963 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		5B2992601F0BD2F400C27963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B2992631F0BD2F400C27963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B2992651F0BD2F400C27963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC1D1DEEB5AA06F97CDF794B /* Pods-gaugetest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaugetest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gaugetest/Pods-gaugetest.debug.xcconfig"; sourceTree = "<group>"; };
+		E00E2AED924967E32BB0B656 /* Pods-gaugetest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaugetest.release.xcconfig"; path = "Pods/Target Support Files/Pods-gaugetest/Pods-gaugetest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947AEA70AEB607A9F5D4C08D /* Pods_gaugetest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				5B2992581F0BD2F400C27963 /* gaugetest */,
 				5B2992571F0BD2F400C27963 /* Products */,
+				AE4E8CF0A9FBB48ECAFE6414 /* Pods */,
+				8B77211B3C0B9C330A12C4D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = gaugetest;
 			sourceTree = "<group>";
 		};
+		8B77211B3C0B9C330A12C4D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05B922E994EB97FD806578B6 /* Pods_gaugetest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE4E8CF0A9FBB48ECAFE6414 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC1D1DEEB5AA06F97CDF794B /* Pods-gaugetest.debug.xcconfig */,
+				E00E2AED924967E32BB0B656 /* Pods-gaugetest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B2992681F0BD2F400C27963 /* Build configuration list for PBXNativeTarget "gaugetest" */;
 			buildPhases = (
+				87632396F486ADEA95E0137E /* [CP] Check Pods Manifest.lock */,
 				5B2992521F0BD2F400C27963 /* Sources */,
 				5B2992531F0BD2F400C27963 /* Frameworks */,
 				5B2992541F0BD2F400C27963 /* Resources */,
+				C694726DF1920FAF73F7747B /* [CP] Embed Pods Frameworks */,
+				4CEC45A98BF11E40F37F63EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +124,7 @@
 					5B2992551F0BD2F400C27963 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 4R27WS7UZC;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +159,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CEC45A98BF11E40F37F63EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gaugetest/Pods-gaugetest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87632396F486ADEA95E0137E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C694726DF1920FAF73F7747B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gaugetest/Pods-gaugetest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5B2992521F0BD2F400C27963 /* Sources */ = {
@@ -259,6 +335,7 @@
 		};
 		5B2992691F0BD2F400C27963 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC1D1DEEB5AA06F97CDF794B /* Pods-gaugetest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4R27WS7UZC;
@@ -272,6 +349,7 @@
 		};
 		5B29926A1F0BD2F400C27963 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E00E2AED924967E32BB0B656 /* Pods-gaugetest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4R27WS7UZC;
@@ -302,6 +380,7 @@
 				5B29926A1F0BD2F400C27963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
