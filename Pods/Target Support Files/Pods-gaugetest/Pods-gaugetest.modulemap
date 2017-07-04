@@ -1,0 +1,6 @@
+framework module Pods_gaugetest {
+  umbrella header "Pods-gaugetest-umbrella.h"
+
+  export *
+  module * { export * }
+}
